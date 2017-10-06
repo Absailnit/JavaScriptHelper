@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CapitalizeTheFirstLetterOfAString</title>
+    </head>
+    <body>
+    <script>
+      //I like to code in functions as they make it better for me on debug
+      
+        function makeCapital(input){
+     var input = input.split(" "); // create a split on the empty space
+     
+      //you will need to create a loop to iterate thru the words
+        for(var i = 0; i < input.length; i++){
+        
+        //now you will create a new variable to store the input changing the first element that starts at zero to uppercase
+        var j = input[i].charAt(0).toUpperCase();
+        
+        //once you have made changes to the first letter you simply add the rest of the index to the lowercase substring.element 1
+            input[i] = j + input[i].substr(1);
+        }
+      }
+        
+        //code prompts user for input string of words
+        var stringtoCap = prompt("Enter a string of words");
+        
+        //this is your call to execute the function and produce the answer to your screen
+        alert(makeCapital(stringtoCap));
+        </script>
+        </body>
+    </html>
