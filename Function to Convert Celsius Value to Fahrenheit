@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CelsiustoFarenheit</title>
+    </head>
+    <body>
+    <script>
+         //you will create function and pass in celsius as an argument/parameter
+        function convertTemp(cTemp){
+        
+            // you will need to create a variable to store your calculation note:dont forget to use the order of operations
+            var hTemp = ((cTemp*9)/5)+32;
+            
+            // you will return what you need from the function
+            return hTemp;
+             }
+             
+             // you will now store a variable that calls your function with the temperature to convert
+            var fTemp = convertTemp(12);
+            
+            //you are now to concatenate the string with what you wish to print to screen with the fTemp variable!  Voila!Fahrenheit! 
+            alert("The temperature in Fahrenheit is " + fTemp);
+    </script>
+    </body>
+    <html>
