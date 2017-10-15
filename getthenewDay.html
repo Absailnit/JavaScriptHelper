@@ -1,0 +1,57 @@
+Write a program using the switch statement to print a different message to the user 
+depending on what day of the week it is today
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GettheDay</title>
+    </head>
+        <body>
+        <script>
+            
+    /*You need to create a variable to store the message*/        
+    var message;
+     
+    /*You need to use the date function within the switch clause
+      you will then use numbers starting from 0 to 6 <- which is 
+      denoted by default. *Note: Remember in JavaScript the first 
+      element always starts at zero. */
+    
+    switch (new Date().getDay()){
+        case 0:
+        message = "Sunday's child is bonnie and blithe, good and gay";
+        break;
+        case 1:
+        message = "Monday's child is fair of face";
+        break;
+        case 2:
+        message = "Tuesday's child is full of grace";
+        break;
+        case 3:
+        message = "Wednesday's child is full of woe";
+        break;
+        case 4:
+        message = "Thursday's child has far to go";
+        break;
+        case 5:
+        message = "Friday's child is loving and giving";
+        break;
+        default:
+        message = "Saturday's child works hard for a living";
+        
+        }
+        /*You will now call the function with an alert to the screen
+        using the location you stored the data to be read which is place 
+        in the message variable Note: I used the alert but if you want to 
+        write document.write(message)it will also deliver a result.*/
+            
+        alert(message);
+     </script>
+     </body>
+     </html>
+        
+        
+        
+        
+        
+        
