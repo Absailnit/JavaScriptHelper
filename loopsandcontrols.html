@@ -1,0 +1,36 @@
+
+
+<DOCTYPE! html>
+    <html>
+    <head>
+        <title>Loops and Controls</title>
+        </head>
+        <body>
+         <script>
+         
+         //Create an array to store string(data type)...the months of the year
+         
+         var month = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'];
+        
+         /* I comment changes or variable switches to refer to. I leave extra space to 
+            be able to read the code and for organization purposes. It is a good practice to follow and if you are in school to learn programming your professor may be very eager for you to employ it.*/ 
+        
+        
+        //Create a variable to store your output message.
+          var message = "";
+             
+
+          
+        /*Remember you will need a loop to iterate through the array to store the elements in the proper order. Because you are working with an index a for loop works nicely for this purpose*/
+        
+        for( var i=1; i<month.length;i++){
+          
+          message += 'Month' + i  + ' is ' + month[i] + '\n';
+        
+        }
+         
+         alert(message);
+         
+         </script>
+         </body>
+         </html>
