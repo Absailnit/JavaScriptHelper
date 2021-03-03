@@ -1,0 +1,13 @@
+//Declare a variable string
+let movieName = "2001: A Space Odyssey";
+
+//Declare a variable location to look for non digits with the  shortcut for nondigit character lookup. DON'T forget the global flag
+
+let noNumRegex = /\D/g; // Change this line
+
+//Declare a variable location to perform the match logic on the length of the string movieName
+
+let result = movieName.match(noNumRegex).length;
+
+//Use console function to print result in your browser
+console.log(result);
