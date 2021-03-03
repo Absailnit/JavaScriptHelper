@@ -1,0 +1,11 @@
+//Declare a variable location for the string called quoteSample
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+
+//Declare a variable location to contain the Regex match for h-s and 0-5
+let myRegex = /[h-s2-6]/ig; // Change this line
+
+//Declare a variable location to match the requested conditions
+let result = quoteSample.match(myRegex); // Change this line
+
+//Call the result to display in the browser
+console.log(result);
