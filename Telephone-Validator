@@ -9,3 +9,18 @@ function telephoneCheck(str) {
 }
 
 telephoneCheck("555-555-5555");
+
+Solution:
+1.^start of string
+2. 1 denotes 1st digit
+3. ? denotes the one is optional in the number
+4. \s? denotes the first space appearing in the numbers string the question mark denotes it is optional.
+6. ( )) you must capture the group for the next condition the parentheses.
+7. \d denotes a digit
+8. {} the number placed in the parentheses denotes the number of digits in the first pattern.
+9. | or will allow for the (\d{3}\) condition to display a digit with or without a dash.
+10. -? means the dash is optional when included in the number string.
+11. \s? denotes an optional space when included in the number string. 
+12. \d denotes digits
+13. {} denotes the number of digits
+14. $ ends the string.
