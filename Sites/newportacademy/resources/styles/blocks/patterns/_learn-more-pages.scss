@@ -1,0 +1,48 @@
+.pattern-guide-tips {
+  @include media-breakpoint-down(md) {
+    width: 234px;
+    margin: 0 auto;
+  }
+}
+
+.pattern-learn-more-pages {
+  background-color: $white;
+
+  .learn-more-column {
+    overflow: hidden;
+
+    h3 .link {
+      &:hover {
+        text-decoration: underline;
+        border-bottom: none;
+      }
+    }
+
+    h3 {
+      margin-top: 0 !important;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 40px;
+      }
+    }
+
+    figure {
+      margin-bottom: 5px;
+
+      a {
+        img {
+          transform: translate3d(0, 0, 0) scale(1.12);
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        img {
+          opacity: 0.8;
+          transform: translate3d(0, 0, 0) scale(1);
+          transition: opacity 3.5s, transform 3.5s;
+        }
+      }
+    }
+  }
+}
